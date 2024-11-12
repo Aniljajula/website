@@ -1,0 +1,179 @@
+/* Main blog page styling */
+.blog-page {
+    font-family: Arial, sans-serif;
+    color: #333333;
+}
+
+/* Header section with background image */
+.blog-header {
+    position: relative;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+/* Image styling */
+.blog-image {
+    width: 100%;
+    height: 50vh; /* Adjust the height as needed */
+    object-fit: cover; /* Ensures the image covers the entire area */
+    border-radius: 8px;
+    padding: 0%;   
+}
+
+/* Overlay content on the header */
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+.header-content h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.header-content p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+/* Blog content and sidebar */
+.blog-content {
+    display: flex;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Main blog content area (where cards are placed) */
+.blog-main {
+    flex: 3;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+/* Card Container Styling */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+/* Card Image Styling */
+.card-image {
+    width: 100%;
+    height: 200px; /* Adjust height based on your design */
+    object-fit: cover; /* Ensures the image covers the card area */
+    border-bottom: 2px solid #f0f0f0; /* Optional: add a border between image and content */
+}
+
+/* Card Body Styling */
+.card-body {
+    padding: 20px;
+}
+
+/* Card Title Styling */
+.card-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Card Description Styling */
+.card-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Read More Button Styling */
+.read-more-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* Read More Button Hover Effect */
+.read-more-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Card Hover Effect */
+.card:hover {
+    transform: translateY(-10px); /* Lifts the card when hovered */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Increase shadow for hover effect */
+}
+
+/* Sidebar styling */
+.blog-sidebar {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Search box styling */
+.search-box {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.search-box input {
+    padding: 8px;
+    flex: 1;
+    border: none;
+    outline: none;
+}
+
+.search-box button {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Sidebar sections styling */
+.sidebar-section {
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-section h2 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+/* Hover effect on sidebar section headings */
+.sidebar-section h2:hover {
+    color: #007bff;
+}
+
+/* No categories text styling */
+.sidebar-section p {
+    color: #666;
+    font-size: 14px;
+}

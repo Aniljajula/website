@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contact-page {
+    background-image: url('../Assets/contact.99.jpeg'); /* Update the path as needed */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #61d415;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 20px;
+    min-height: 100vh;
+}
+
+.contact-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(250, 249, 249, 0.6); /* Dark overlay for better readability */
+    z-index: -1;
+}
+
+.contact-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.contact-header p {
+    font-size: 16px;
+    color: #32b321;
+}
+
+.contact-content {
+    display: flex;
+    gap: 50px;
+    max-width: 1000px;
+    width: 100%;
+    z-index: 1; /* Ensure content is above overlay */
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    flex: 1;
+    background-color: rgba(68, 68, 68, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.contact-input, .contact-textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-textarea {
+    resize: none;
+    height: 100px;
+}
+
+.contact-button {
+    background-color: #555;
+    color: #ffffff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-button:hover {
+    background-color: #666;
+}
+
+.contact-details {
+    flex: 1;
+    background-color: rgba(68, 68, 68, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-details h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.contact-details p {
+    font-size: 16px;
+    color: #ddd;
+}
+
+.social-icons {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #ccc;
+}

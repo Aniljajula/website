@@ -1,0 +1,143 @@
+/* General Styling */
+.explore {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Video Gallery */
+.explore-gallery {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+}
+
+.explore-video {
+    width: 100%;
+    height: 100vh; /* Adjust video height as needed */
+    object-fit: cover;
+}
+
+.overlay-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
+
+.overlay-content h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.overlay-content p {
+    font-size: 1rem;
+}
+
+/* Circular Cards Section */
+.circular-cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    position: relative;
+}
+
+.circular-card {
+    width: 300px; /* Adjusted for optimal size */
+    height: 400px; /* Adjusted for height */
+    border-radius: 20px; /* Rounded corners for the cards */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out; /* Smoother transition for scaling and shadow effect */
+}
+
+/* Hover Effects - Scaling and Shadow */
+.circular-card:hover {
+    transform: scale(1.05); /* Slight zoom-in effect */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3); /* Increased shadow for depth */
+    transition: all 0.3s ease-in-out; /* Smooth transition for scaling and shadow */
+}
+
+/* Card Content */
+.card-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s ease; /* Smooth transition for 3D effects */
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+/* Hover Effect for Images */
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Image Hover: Zoom In and Fade */
+.circular-card:hover .card-image {
+    transform: scale(1.1); /* Zoom in the image */
+    opacity: 0.85; /* Fade the image slightly */
+}
+
+/* Text Effects */
+.card-front h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    transition: transform 0.3s ease; /* Smooth transition for text */
+}
+
+/* Back Text Styling */
+.card-back p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.6;
+    padding: 10px;
+    text-align: center;
+    opacity: 0; /* Start with hidden description */
+    transform: translateY(30px); /* Move description down initially */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+/* Show Description on Hover */
+.circular-card:hover .card-back p {
+    opacity: 1; /* Show description on hover */
+    transform: translateY(0); /* Move description to normal position */
+}
+
+/* Additional styling for front and back */
+.card-front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card-back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}

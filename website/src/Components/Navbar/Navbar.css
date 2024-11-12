@@ -1,0 +1,83 @@
+/* Navbar.css */
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    background: rgba(200, 200, 200, 0.2);
+    border-radius: 10px;
+    
+}
+
+.navigation a {
+    color: #0e0d0d;
+    text-decoration: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+}
+
+.navigation a.active,
+.navigation a:hover {
+    background: rgba(94, 205, 233, 0.3);
+    color: #00aaff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #ffffff;
+    border: 2px solid #00aaff;
+    min-width: 400px;
+    min-height: 40vh;
+    border-radius: 7px;
+    z-index: 1;
+    max-height: 200px; /* Set a maximum height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #006600;
+    padding: 12px 20px;
+    display: block;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-content a:hover {
+    background-color: #00aaff;
+    color: #ffffff;
+}
+
+.logo-image {
+    width: 150px;
+    height: auto;
+}
+
+/* Optional: Custom scrollbar styling */
+.dropdown-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.dropdown-content::-webkit-scrollbar-thumb {
+    background-color: #00aaff;
+    border-radius: 10px;
+}
+
+.dropdown-content::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}

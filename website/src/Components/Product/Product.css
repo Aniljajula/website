@@ -1,0 +1,89 @@
+/* Container for the entire page */
+.product-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Video section styling */
+.video-background {
+  position: relative;
+  height: 60vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.video-content {
+  position: relative;
+  z-index: 1;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.video-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.video-content p {
+  font-size: 1.2rem;
+}
+
+/* Cards Section Styling */
+.card-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  background-color: #f8f9fa;
+}
+
+/* Card Styling */
+.card {
+  background-color: #ffffff;
+  width: 250px;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Image Styling */
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+/* Card Content Styling */
+.card-content {
+  padding: 15px;
+}
+
+.card-content h2 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.card-content p {
+  font-size: 1rem;
+  color: #666;
+}
